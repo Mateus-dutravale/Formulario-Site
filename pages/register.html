@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/register.css">
     <title>Register</title>
 </head>
-<body>
-    
+
+<body class="container">
+    <div class="formulario_com_header">
+        <header class="navbar">
+            <nav>
+                <a href="./login.html">Voltar</a>
+                <h1>Formulário de inscrição</h1>
+                <p>Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
+            </nav>
+        </header>
+        <main>
+            <form class="formulario" action="/action_page.php" target="_blank" method="post">
+                <div class="info_participantes">
+                    <h2 class="formulario_participantes_subtitulos">Informações do participante</h2>
+                    <div class="info_participantes_texto">
+                        <label for="Nome"> Nome completo</label><br>
+                        <input type="text" name="Nome" id="Nome" required>
+                    </div>
+                    <div class="info_participantes_texto">
+                        <label for="data_nascimento"> Data de nascimento</label><br>
+                        <input type="date" name="data_nascimento" id="data_nascimento" required>
+                    </div>
+                    <div class="info_participantes_texto">
+                        <label for="cpf">CPF</label><br>
+                        <input type="number" id="cpf" name="cpf" required>
+                    </div>
+                    <div class="info_participantes_texto">
+                        <label>Sexo</label><br>
+                        <div class="info_participantes_selecao_sexo">
+                            <label for="Masculino">Masculino</label>
+                            <input type="radio" id="Masculino" name="sexo" value="Masculino" required>
+                            <label for="Feminino">Feminino</label>
+                            <input type="radio" id="Feminino" name="sexo" value="Feminino" required>
+                        </div>
+
+                    </div>
+                    <div class="info_participantes_texto">
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="info_participantes_texto">
+                        <label for="telefone">Telefone</label><br>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(dd) 9 00000000"
+                            pattern="[0-9]{2} [9] [0-9]{8}" required>
+                    </div>
+                    <div class="input_arquivos_container" class="info_participantes_texto">
+                        <label for="arquivo">Documento de identidade:</label> 
+                        <div class="input_arquivos">
+                            <img src="../public/img/upload-na-nuvem.png" alt="Ícone de upload">
+                            <label for="arquivo" class="texto-upload">Clique aqui para selecionar o arquivo</label>
+                            <input type="file" id="arquivo" name="arquivo" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="endereco_participantes">
+                    <h2 class="formulario_participantes_subtitulos">Endereço residencial</h2>
+                    <div class="info_participantes_texto">
+                        <label for="cep">CEP</label><br>
+                        <input type="number" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" required>
+                    </div>
+                    <div class="info_participantes_texto_endereco">
+                        <label for="rua">Rua</label>
+                        <input type="text" id="rua" name="rua" required>
+                    </div>
+                    <div class="info_participantes_texto_endereco">
+                        <label for="numero">Número</label>
+                        <input type="number" id="numero" name="numero" required>
+                    </div>
+                    <div class="info_participantes_texto_endereco">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" required>
+                    </div>
+                    <div class="info_participantes_texto_endereco">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" name="estado" required>
+                    </div>
+                    <div class="input_arquivos_container" class = "info_participantes_texto">
+                        <label for="arquivo">Comprovante de residência:</label> 
+                        <div class="input_arquivos">
+                            <img src="../public/img/upload-na-nuvem.png" alt="Ícone de upload">
+                            <label for="arquivo" class="texto-upload">Clique aqui para selecionar o arquivo</label>
+                            <input type="file" id="arquivo" name="arquivo" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trilha_participante">
+                    <h2 class="formulario_participantes_subtitulos">Trilhas de aprendizagem</h2>
+                    <p>Selecione apenas uma trilha</p>
+                    <div class="info_participante_selecao_trilha">
+
+                        <label class="trilha_participante_link" for="front-end">
+                            <input type="radio" id="front-end" name="area" value="programação front end" required>
+                            <div class="trilha_participante_conteudo">
+                                <img src="../public/img/front_end.png" alt="Programação Front-End" class="trilha_participante_img">
+                                <p class="trilha_participante_nomes">Programação Front-End</p>
+                            </div>
+                        </label>
+                        <label class="trilha_participante_link" for="front-end">
+                            <input type="radio" id="front-end" name="area" value="programação front end" required>
+                            <div class="trilha_participante_conteudo">
+                                <img src="../public/img/back_end.png" alt="Programação Back-End" class="trilha_participante_img">
+                                <p class="trilha_participante_nomes">Programação Back-End</p>
+                            </div>
+                        </label>
+                        <label class="trilha_participante_link" for="front-end">
+                            <input type="radio" id="front-end" name="area" value="programação front end" required>
+                            <div class="trilha_participante_conteudo">
+                                <img src="../public/img/jogos.png" alt="Programação de Jogos" class="trilha_participante_img">
+                                <p class="trilha_participante_nomes">Programação de Jogos</p>
+                            </div>
+                        </label>
+                        <label class="trilha_participante_link" for="front-end">
+                            <input type="radio" id="front-end" name="area" value="programação front end" required>
+                            <div class="trilha_participante_conteudo">
+                                <img src="../public/img/interface-ux.png" alt="Designer e Experiência" class="trilha_participante_img">
+                                <p class="trilha_participante_nomes">Designer e Experiência</p>
+                            </div>
+                        </label>
+                        <label class="trilha_participante_link" for="front-end">
+                            <input type="radio" id="front-end" name="area" value="programação front end" required>
+                            <div class="trilha_participante_conteudo">
+                                <img src="../public/img/dados.png" alt="Ciência de Dados" class="trilha_participante_img">
+                                <p class="trilha_participante_nomes">Ciência de Dados</p>
+                            </div>
+                        </label>
+                        
+                    </div>
+                </div>
+
+                <div class="termo_participantes">
+                    <input type="checkbox" name="termo_de_adesao" id="termo_de_adesao" required>
+                    <label for="termo_de_adesao">Declaro que li e concordo com os <strong>Termos e Condições</strong> e
+                        com a <strong>Política de Privacidade</strong>. </label>
+                </div>
+                <div class="botoes_formulario">
+                    <a href="cancelar">Cancelar</a>
+                    <input type="submit" value="Fazer incrição">
+                </div>
+                <!-- -->
+            </form>
+        </main>
+    </div>
+    <div class="imagens_formulario">
+        <img class="ilustacao_capa" src="../public/img/Ilustration.png" alt="ilustração capa" width: 200px height:
+            200px;>
+        <img class="logo_trilhas_inova" src="../public/img/logo-trilhas-inova.png" alt="logo trilhas inova">
+    </div>
+
+
 </body>
+
 </html>

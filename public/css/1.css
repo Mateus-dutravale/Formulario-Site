@@ -1,0 +1,326 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #0056b3; /* Azul escuro */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+   
+}
+
+
+/* Estilização da barra de navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+
+
+}
+
+
+/* Estilo do link do botão "Voltar" */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 5px solid white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+
+/* Efeito hover no botão "Voltar" */
+nav a:hover {
+    background-color: white;
+    color: #0056b3;
+}
+
+
+/* Estilo do título (h1) e descrição (p) dentro da navbar */
+nav h1 {
+    font-size: 22px;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+   
+}
+
+
+nav p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* Estilo geral do corpo */
+body {
+    height: 100vh;
+    box-sizing: border-box;
+   
+}
+
+
+/* Estilização da área principal */
+.main {
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(54, 53, 53, 0.1);
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #ffffff;
+
+
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza as imagens de forma vertical */
+    align-items: flex-start; /* Alinha as imagens à esquerda */
+    gap: 20px;
+    width: 100%; /* Ajusta a largura do container */
+    max-width: 600px; /* Limita a largura máxima, pode ajustar conforme necessário */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 0 10px; /* Adiciona um pouco de espaço nas laterais */
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+/* Estilo do link da trilha participante */
+.trilha_participante_link {
+    display: flex;
+    align-items: center; /* Alinha os itens no eixo transversal */
+    gap: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    /*padding: 21.5px;*/
+    text-decoration: none;
+    color: black;
+    max-width: 400px;
+    margin: 5px auto;
+    flex-direction: column;
+    width: 180px;
+    text-align: center;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    justify-content: center;
+}
+
+
+/* Efeito hover no link da trilha participante */
+.trilha_participante_link:hover {
+    background-color: #dbdbe97c;
+}
+
+
+/* Estilo dos títulos (h1, h2) */
+h1 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+
+h2 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+    font-weight: normal;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+/* Estilo do conteúdo da trilha participante */
+.trilha_participante_conteudo {
+    display: flex;
+    flex-direction: column; /* Organiza imagem e texto em coluna */
+    align-items: center; /* Centraliza imagem e texto */
+    text-align: center;
+}
+
+
+/* Estilo dos nomes da trilha participante */
+.trilha_participante_nomes {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #090909fb;
+}
+
+
+/* Estilo da imagem da trilha participante */
+.trilha_participante_img {
+    width: 80px; /* Ajuste conforme necessário */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Estilo das divisões do formulário (informações, endereço, trilha) */
+.info_participantes, .endereco_participantes, .trilha_participante {
+    margin-bottom: 30px;
+}
+
+
+/* Alinhamento dos campos de input e labels */
+div {
+    margin-bottom: 15px;
+}
+
+
+/* Estilo dos labels dentro do formulário */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #0c0c0c;
+}
+
+
+/* Estilo dos campos de input no formulário */
+input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="tel"], input[type="file"], input[type="checkbox"], input[type="radio"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+/* Estilo específico para o checkbox */
+input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+/* Estilo específico para o campo "radio" */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+/* Estilização do botão de envio do formulário */
+input[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+
+/* Efeito hover no botão de envio */
+input[type="submit"]:hover {
+    background-color: #003d7a;
+}
+
+
+/* Estilização da lista de participantes da trilha */
+.trilha_participante_lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* Estilo do texto do termo de adesão */
+label[for="termo_de_adesao"] {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Ajustes no botão de envio dentro do formulário */
+input[type="submit"] {
+    width: auto;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+/* Container azul que vai ao redor da imagem */
+.main .image-container {
+    background-color: #0056b3; /* Azul */
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px; /* Espaçamento entre a imagem e o conteúdo */
+    width: 200px; /* Defina o tamanho desejado para a área da imagem */
+}
+
+
+/* Ajustes na imagem */
+.main .image-container img {
+    width: 100%; /* Imagem ocupará toda a largura do container */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Estilo do conteúdo de texto */
+.main .content {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Estilo dos títulos principais dentro do conteúdo */
+.main h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+/* Estilo do parágrafo de texto */
+.main p {
+    font-size: 16px;
+    color: #555;
+}
+

@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-primaria: #2135A6;
+    --cor-secundaria: #FFFFFF;
+    --cor-texto: #292524;
+    --cor-texto-claro: #666;
+    --cor-borda: #ccc;
+    --fonte-primaria: 'Poppins', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1280px;
+    height: 832px;
+    top: 124px;
+    left: 5712px;
+ 
+    background-color: #2135A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagens_formulario {
+    background-color: inherit;
+
+    width: 624px;
+    height: 832px;
+    flex-direction: column;
+    position: absolute;
+    top: 140px;
+    left: 800px;
+}
+
+.formulario_com_header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 656px;
+    height: auto;
+    max-height: 2438px;
+    padding: 64px;
+    gap: 48px;
+    background: #FFFFFF;
+    flex-direction: column;
+}
+
+.container,
+.imagens_formulario,
+.formulario_com_header,
+.info_participantes_selecao_sexo{
+    display: flex;
+    align-items: center;
+}
+
+
+.ilustracao_capa {
+    width: 500;
+    height: 500;
+    top: 140px;
+    left: 712px;
+    gap: 0px;
+
+}
+
+.logo_trilhas_inova {
+    width: 212.25px;
+    height: 26.49px;
+
+    top: 851px;
+    left: 880px;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 528px;
+    min-height: 134px;
+    gap: 24px;
+
+}
+
+.formulario_participantes_subtitulos {
+    width: 100%;
+    max-width: 528px;
+    min-height: 20px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600px;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+    color: #292524;
+}
+
+.info_participantes, .endereco_participantes, .trilha_participante {
+    max-width: 528px;
+    min-height: auto; 
+    gap: 24px; 
+
+}
+
+.info_participantes_texto, .info_participantes_texto_endereco{
+    width: 100%;
+    max-width: 528px;
+    min-height: 72px;
+    gap: 8px;
+
+}
+
+.info_participantes_texto label, .info_participantes_texto_endereco label, .input_arquivos_container label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+
+.info_participantes_texto input, .info_participantes_texto_endereco input {
+    width: 100%;
+    max-width: 528PX;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.input_arquivos_container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espaçamento entre o label e o campo */
+}
+
+.input_arquivos {
+
+    max-width: 528px;
+    min-height: 188px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+.input_arquivos label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+}
+
+.input_arquivos img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+
+.input_arquivos input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Efeito hover */
+.input_arquivos:hover {
+    border-color: #999;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Efeito hover */
+.input_arquivos:hover {
+    border-color: #999;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.formulario_participantes_subtitulos {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem; 
+    color: #2135A6; 
+    margin-bottom: 10px;
+}
+
+.trilha_participante p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.info_participante_selecao_trilha {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+/* Estilo dos cards de seleção */
+.trilha_participante_link {
+    width: calc(50% - 5px); /* Dois cards por linha com espaçamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 2px solid #ccc; 
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-sizing: border-box; 
+    position: relative; 
+}
+
+
+.trilha_participante_link:hover {
+    border-color: #2135A6; 
+    background-color: #f0f4ff; 
+}
+
+
+.info_participante_selecao_trilha input[type="radio"] {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    width: 16px; 
+    height: 16px;
+    cursor: pointer;
+    z-index: 1; /* Garante que o radio fique acima do conteúdo */
+}
+
+.trilha_participante_img {
+    width: 60px; 
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.termo_participantes {
+    max-width: 528px;
+    min-height: 48px;
+    gap: 12px;
+    top: 0px;
+}
+
+.termo_participantes p {
+    width: 492;
+    height: 48;
+
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.termo_participantes strong {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.termo_participantes input:checked {
+    width: 24;
+    height: 24;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.botoes_formulario {
+    width: 100%;
+    max-width: 528px;
+    min-height: 64px;
+    gap: 16px;
+    padding-top: 16px;
+}
+
+
+
+
+
+
