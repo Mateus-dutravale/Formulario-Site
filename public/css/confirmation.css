@@ -1,0 +1,59 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centraliza verticalmente */
+}
+
+/* Container principal */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Mensagem de sucesso */
+.success-message h1 {
+    font-size: 2rem;
+    color: #2135A6; /* Cor primária */
+    margin-bottom: 20px;
+}
+
+.success-message p {
+    font-size: 1rem;
+    color: #666; /* Cor de texto claro */
+    margin-bottom: 10px;
+}
+
+/* Botão de login */
+.login-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #FF6600; /* Cor de destaque */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #e65c00; /* Cor de destaque mais escura */
+}
