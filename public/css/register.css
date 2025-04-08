@@ -13,10 +13,10 @@
 }
 
 .container {
-    width: 1280px;
-    height: 832px;
-    top: 124px;
-    left: 5712px;
+    width: 80rem;
+    height: 52rem;
+    top: 7.75rem;
+    left: 357rem;
  
     background-color: var(--cor-primaria);
     display: flex;
@@ -27,12 +27,12 @@
 .imagens_formulario {
     background-color: inherit;
 
-    width: 624px;
-    height: 832px;
+    width: 39rem;
+    height: 52rem;
     flex-direction: column;
     position: absolute;
-    top: 140px;
-    left: 800px;
+    top: 8.75rem;
+    left: 50rem;
 }
 
 /* Garantindo que os elementos fiquem lado a lado em telas grandes */
@@ -43,16 +43,16 @@
         justify-content: center;
         flex-wrap: wrap;
         background-color: var(--cor-primaria);
-        padding: 20px;
-        gap: 20px;
+        padding: 1.25rem;
+        gap: 1.25rem;
         width: 100%;
-        max-width: 1280px;
+        max-width: 1280rem;
         margin: auto;
     }
 
     .imagens_formulario {
         width: 50%;
-        max-width: 624px;
+        max-width: 39rem;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -61,12 +61,12 @@
     
     .formulario_com_header {
         width: 50%;
-        max-width: 656px;
+        max-width: 41rem;
         background: var(--cor-secundaria);
-        padding: 64px;
+        padding: 4rem;
         display: flex;
         flex-direction: column;
-        gap: 48px;
+        gap: 3rem;
     }
 }
 
@@ -74,13 +74,13 @@
 
 .formulario_com_header {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 656px;
+    top: 0rem;
+    left: 0rem;
+    width: 41rem;
     height: auto;
-    max-height: 2438px;
-    padding: 64px;
-    gap: 48px;
+    max-height: 154.25rem;
+    padding: 4rem;
+    gap: 3rem;
     background: var(--cor-secundaria);
     flex-direction: column;
 }
@@ -95,66 +95,66 @@
 
 
 .ilustracao_capa {
-    width: 500;
-    height: 500;
-    top: 140px;
-    left: 712px;
-    gap: 0px;
+    width: 31.25rem;
+    height: 31.25rem;
+    top: 8.75rem;
+    left: 44.5rem;
+    gap: 0rem;
 
 }
 
 .logo_trilhas_inova {
-    width: 212.25px;
-    height: 26.49px;
+    width: 13.25rem;
+    height: 1.65rem;
 
-    top: 851px;
-    left: 880px;
+    top: 53.20rem;
+    left: 880rem;
 }
 
 .navbar {
     width: 100%;
-    max-width: 528px;
-    min-height: 134px;
-    gap: 24px;
+    max-width: 33rem;
+    min-height: 8.375rem;
+    gap: 1.5rem;
 
 }
 
 .formulario_participantes_subtitulos {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 125%;
     color: var(--cor-primaria);
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 
 .info_participantes, .endereco_participantes, .trilha_participante {
-    max-width: 528px;
-    gap: 24px; 
+    max-width: 33rem;
+    gap: 1.5rem; 
 
 }
 
 .info_participantes_texto, .info_participantes_texto_endereco{
     width: 100%;
-    max-width: 528px;
-    min-height: 72px;
-    gap: 8px;
+    max-width: 33rem;
+    min-height: 4.5rem;
+    gap: 0.5rem;
 
 }
 
 .info_participantes_texto label, .info_participantes_texto_endereco label, .input_arquivos_container label {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--cor-texto-claro);
 }
 
 .info_participantes_texto input, .info_participantes_texto_endereco input {
     width: 100%;
-    max-width: 528PX;
-    font-size: 16px;
-    border: 1px solid var(--cor-borda);
-    border-radius: 5px;
+    max-width: 33rem;
+    font-size: 1rem;
+    border: 0.0625rem solid var(--cor-borda);
+    border-radius: 0.3125rem;
     background-color: var(--cor-secundaria);
 }
 
@@ -165,14 +165,14 @@
 .input_arquivos_container {
     display: flex;
     flex-direction: column;
-    gap: 5px; /* Espaçamento entre o label e o campo */
+    gap: 0.3125rem; /* Espaçamento entre o label e o campo */
 }
 
 .input_arquivos {
 
-    max-width: 528px;
-    min-height: 188px;
-    border: 2px dashed var(--cor-borda);
+    max-width: 33rem;
+    min-height: 1811.75rem8px;
+    border: 0.125rem dashed var(--cor-borda);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -183,20 +183,20 @@
     overflow: hidden;
     text-align: center;
     background-color: var(--cor-secundaria);
-    padding: 0;
+    padding: 0rem;
 }
 
 .input_arquivos label {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     color: var(--cor-texto-claro);
     cursor: pointer;
 }
 
 .input_arquivos img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-bottom: 0.625rem;
     opacity: 0.6;
 }
 
@@ -220,22 +220,22 @@
     font-weight: 600;
     font-size: 1.25rem; 
     color: var(--cor-primaria); 
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .trilha_participante p {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--cor-texto-claro);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 
 .info_participante_selecao_trilha {
     display: flex;
     flex-wrap: wrap; 
-    gap: 10px; 
+    gap: 0.625rem; 
 }
 
 /* Estilo dos cards de seleção */
@@ -245,9 +245,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 15px;
-    border: 2px solid var(--cor-borda); 
-    border-radius: 8px;
+    padding: 0.9375rem;
+    border: 0.125rem solid var(--cor-borda); 
+    border-radius: 0.5rem;
     background-color: var(--cor-secundaria);
     cursor: pointer;
     transition: all 0.3s ease;
@@ -265,33 +265,33 @@
 
 .info_participante_selecao_trilha input[type="radio"] {
     position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    width: 16px; 
-    height: 16px;
+    top: 0.625rem; 
+    left: 0.625rem; 
+    width: 1rem; 
+    height: 1rem;
     cursor: pointer;
     z-index: 1; /* Garante que o radio fique acima do conteúdo */
 }
 
 .trilha_participante_img {
-    width: 60px; 
-    height: 60px;
+    width: 3.75rem; 
+    height: 3.75rem;
     margin-bottom: 10px;
 }
 
 .termo_participantes {
-    max-width: 528px;
-    min-height: 48px;
+    max-width: 33rem;
+    min-height: 483rem3px;
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 16px; /* Adicionado para espaçamento */
+    gap: 0.75rem;
+    margin-bottom: 1rem; /* Adicionado para espaçamento */
 }
 
 .termo_participantes label {
     font-family: Poppins, sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 150%;
     letter-spacing: 0%;
 }
@@ -301,26 +301,26 @@
 }
 
 .termo_participantes input[type="checkbox"] {
-    width: 24px;
-    height: 24px;
-    margin: 0; 
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0rem; 
 }
 
 .botoes_formulario {
     width: 100%;
-    max-width: 528px;
-    min-height: 64px;
+    max-width: 33rem;
+    min-height: 4rem;
     display: flex;
-    gap: 16px;
-    padding-top: 16px;
+    gap: 1rem;
+    padding-top: 1rem;
 }
 
 .botao_cancelar, .botao_inscricao {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     font-family: Poppins, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
@@ -344,6 +344,43 @@
     background-color: var(--cor-primaria);
 }
 
+@media screen and (max-width: 500px) {
+    #form_container {
+        width: 100%;
+        min-height: 100vh;
+        padding: 2rem;
+    }
+
+    #input_container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.375rem;
+    }
+    .imagens_formulario {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .imagens_formulario {
+        width: 20rem;
+        height: auto;
+    }
+    .ilustracao_capa, .logo_trilhas_inova {
+        width: 100%; /* Adapta à largura do container */
+        height: auto;
+    }
+}
 
 
 
+
+.credenciais_participantes {
+    margin-bottom: 2rem;
+}
+
+.credenciais_participantes small {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.3rem;
+}

@@ -18,7 +18,7 @@
             </nav>
         </header>
         <main>
-            <form class="formulario" onsubmit="abrirConfirmacao(event)">
+            <form class="formulario" onsubmit="abrirConfirmacao(event)" action="" method="post" id="formulario">
                 <div class="info_participantes">
                     <h2 class="formulario_participantes_subtitulos">Informações do participante</h2>
                     <div class="info_participantes_texto">
@@ -87,7 +87,7 @@
                         <div class="input_arquivos">
                             <img src="../public/img/upload-na-nuvem.png" alt="Ícone de upload">
                             <label for="arquivo" class="texto-upload">Clique aqui para selecionar o arquivo</label>
-                            <input type="file" id="arquivo" name="arquivo" required>
+                            <input type="file" id="arquivo2" name="arquivo" required>
                         </div>
                     </div>
                 </div>
@@ -130,6 +130,25 @@
                                 <p class="trilha_participante_nomes">Ciência de Dados</p>
                             </div>
                         </label>
+                    </div>
+                </div>
+                <div class="credenciais_participantes">
+                    <h2 class="formulario_participantes_subtitulos">Crie seu login</h2>
+                    
+                    <div class="info_participantes_texto">
+                        <label for="login">Login (nome de usuário)</label><br>
+                        <input type="text" id="login" name="login" minlength="4" required>
+                    </div>
+                    
+                    <div class="info_participantes_texto">
+                        <label for="senha">Senha</label><br>
+                        <input type="password" id="senha" name="senha" minlength="6" required>
+                        <small>Mínimo 6 caracteres</small>
+                    </div>
+                    
+                    <div class="info_participantes_texto">
+                        <label for="repetir_senha">Repetir Senha</label><br>
+                        <input type="password" id="repetir_senha" name="repetir_senha" required>
                     </div>
                 </div>
                 <div class="termo_participantes">
