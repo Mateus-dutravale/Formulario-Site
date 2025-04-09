@@ -36,14 +36,22 @@ Prototipo de fluxo de cadastro → confirmação → login, com formulário vali
 ```plaintext
 /  
 ├── public/  
+│   ├── pages/  
+|   |   └── confirmation.html 
+|   |   └── login.html 
+│   │   └── register.html
 │   ├── css/  
+|   |   └── confirmation.css 
+|   |   └── login.css 
 │   │   └── register.css  
 │   ├── js/  
-│   │   └── register.js  
+|   |   └── login.js 
+|   |   └── register.js
+│   │   └── utils.js
 │   └── img/  
 │       ├── front_end.png, back_end.png, ...  
 │       ├── upload-na-nuvem.png  
 │       └── logo-trilhas-inova.png  
-├── login.html  
-├── register.html  
-└── cadastro-sucesso.html (a implementar)  
+├── apresentacao.pdf  
+├── Desafio_2_Processo_de_inscrição.pdf 
+└── LICENSE
