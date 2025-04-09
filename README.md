@@ -21,6 +21,19 @@ Prototipo de fluxo de cadastro → confirmação → login, com formulário vali
   - Tipos específicos (`email`, `date`, `tel` com `pattern`).  
   - Checkbox de termos obrigatório.  
 
+### Armazenamento  
+- **LocalStorage**:  
+  ```javascript
+  // Exemplo em register.js
+  function abrirConfirmacao() {
+    const usuario = {
+      nome: document.getElementById('Nome').value,
+      email: document.getElementById('email').value,
+      // ... outros campos
+    };
+    localStorage.setItem('usuarioCadastrado', JSON.stringify(usuario));
+  }
+
 ### Navegação  
 - Botão "Voltar" para retornar ao login.  
 - Redirecionamento pós-cadastro (via JavaScript).  

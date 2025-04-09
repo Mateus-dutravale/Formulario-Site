@@ -27,49 +27,13 @@
 .imagens_formulario {
     background-color: inherit;
 
-    width: 39rem;
-    height: 52rem;
+    width: 50%;
+    height: 50%;
     flex-direction: column;
     position: absolute;
     top: 8.75rem;
     left: 50rem;
 }
-
-/* Garantindo que os elementos fiquem lado a lado em telas grandes */
-@media (max-width: 768px) {
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        background-color: var(--cor-primaria);
-        padding: 1.25rem;
-        gap: 1.25rem;
-        width: 100%;
-        max-width: 1280rem;
-        margin: auto;
-    }
-
-    .imagens_formulario {
-        width: 50%;
-        max-width: 39rem;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .formulario_com_header {
-        width: 50%;
-        max-width: 41rem;
-        background: var(--cor-secundaria);
-        padding: 4rem;
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-    }
-}
-
 
 
 .formulario_com_header {
@@ -344,7 +308,26 @@
     background-color: var(--cor-primaria);
 }
 
-@media screen and (max-width: 500px) {
+.credenciais_participantes {
+    margin-bottom: 2rem;
+}
+
+.credenciais_participantes small {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .container {
+        width: 100%;
+        padding: 1.25rem;
+        background-color: var(--cor-primaria);
+    }
+
     #form_container {
         width: 100%;
         min-height: 100vh;
@@ -356,32 +339,83 @@
         flex-direction: column;
         gap: 2.375rem;
     }
+
     .imagens_formulario {
-        display: none;
+        display: none; 
     }
 }
-@media (max-width: 800px) {
+
+
+@media screen and (min-width: 551px) and (max-width: 815px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        width: 90%; 
+        max-width: 1280px; 
+        margin: auto;
+        padding: 1.25rem;
+        background-color: var(--cor-primaria);
+    }
+
+    #form_container {
+        width: 100%;
+        min-height: auto; 
+        padding: 2rem;
+    }
     .imagens_formulario {
-        width: 20rem;
-        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 40%; /* Largura do container das imagens */
+        max-width: 400px; /* Limite máximo para evitar invasão */
+        margin: 0 auto; /* Centraliza o container */
+        padding: 1rem; /* Espaço interno (opcional) */
     }
-    .ilustracao_capa, .logo_trilhas_inova {
-        width: 100%; /* Adapta à largura do container */
-        height: auto;
+
+    .imagens_formulario img {
+        width: 100%; /* Ocupa 100% do container pai */
+        height: auto; /* Mantém a proporção */
+        object-fit: contain; /* Garante que a imagem não seja cortada */
+    }
+
+    .ilustacao_capa, 
+    .logo_trilhas_inova {
+        max-height: 300px; /* Altura máxima para cada imagem */
     }
 }
 
 
+@media screen and (min-width: 816px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        width: 80%;
+        max-width: 1200px; 
+        margin: auto;
+        padding: 2rem;
+        background-color: var(--cor-primaria);
+    }
 
-
-.credenciais_participantes {
-    margin-bottom: 2rem;
+    .imagens_formulario {
+        .imagens_formulario {
+            display: flex;
+            flex-direction: column;  
+            align-items: center;     
+            gap: 1rem;              
+            width: 40%;             
+            margin: 0 auto;         
+        }
+        
+        .imagens_formulario img {
+            max-width: 100%;        
+            height: auto;           
+        }
+    }
 }
 
-.credenciais_participantes small {
-    display: block;
-    font-size: 0.8rem;
-    color: #666;
-    margin-top: 0.3rem;
-}
 
